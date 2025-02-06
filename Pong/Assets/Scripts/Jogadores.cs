@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class Jogadores : MonoBehaviour
 {
-    public float velocidadeDoJogador;
+    public float velocidadeDoJogador = 5;
     public bool Jogador1;
 
-    public float BordaInferior;
-    public float BordaSuperior;
+    public float BordaInferior = -5.3f;
+    public float BordaSuperior = 0f;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,7 +23,7 @@ public class Jogadores : MonoBehaviour
         }else{moverJogador2();}
         
     }
-    private void moverJogador1()//verificar se não existe outro jeito de limitar o player mais tarde
+    private void moverJogador1()
     {//W e S para mover, só move se estiver dentro da área do jogo
         if(Input.GetKey(KeyCode.W) && transform.position.y <= BordaSuperior)
         {
