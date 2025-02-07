@@ -6,7 +6,7 @@ public class Jogadores : MonoBehaviour
     public bool Jogador1;
 
     public float BordaInferior = -5.3f;
-    public float BordaSuperior = 0f;
+    public float BordaSuperior = 2.25f;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
