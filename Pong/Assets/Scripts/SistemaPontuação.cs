@@ -9,9 +9,15 @@ public class SistemaPontuação : MonoBehaviour
     public Text txtPont;
 
     void Start(){
+        Cursor.visible = false;
         pontuacao1 = 0;
         pontuacao2 = 0;
         attPont();
+    }
+
+    void Update(){
+        if(Input.GetKeyDown(KeyCode.Escape))
+            quit();
     }
   
     public void pontuarP1(){
@@ -26,5 +32,9 @@ public class SistemaPontuação : MonoBehaviour
 
     public void attPont(){
         txtPont.text = pontuacao1 + " : " + pontuacao2;
+    }
+
+    private void quit(){
+        Application.Quit();
     }
 }

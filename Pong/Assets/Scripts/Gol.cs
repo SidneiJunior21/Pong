@@ -9,9 +9,11 @@ public class Gol : MonoBehaviour
         if(golP1 == true){//se for gol no gol do jogador 1, aumenta  a pontuação do jogador 2 e reseta posição da bolinha
             FindFirstObjectByType<SistemaPontuação>().pontuarP2();
             other.gameObject.transform.position = Vector2.zero;
+            other.gameObject.GetComponent<Sushi>().mover();
         }else{//se for gol no gol do jogador 2, aumenta  a pontuação do jogador 1 e reseta posição da bolinha
             FindFirstObjectByType<SistemaPontuação>().pontuarP1();
             other.gameObject.transform.position = Vector2.zero;
+            other.gameObject.GetComponent<Sushi>().mover();
         }
 
     }
