@@ -8,6 +8,7 @@ public class Sushi : MonoBehaviour
     public float randomizadorY;
 
     private Rigidbody2D corpo;
+    public AudioSource som;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -47,5 +48,6 @@ public class Sushi : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collisionInfo){//incrementa velocidade aleatoriamente ao bater em algo
         corpo.linearVelocity += new Vector2(randomizadorX, randomizadorY);
+        som.Play();
     }
 }

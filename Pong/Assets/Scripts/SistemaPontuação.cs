@@ -7,6 +7,7 @@ public class SistemaPontuação : MonoBehaviour
     public int pontuacao2;
 
     public Text txtPont;
+    public AudioSource som;
 
     void Start(){
         Cursor.visible = false;
@@ -22,11 +23,13 @@ public class SistemaPontuação : MonoBehaviour
     public void pontuarP1(){
         pontuacao1 += 1;
         attPont();
+        som.Play();
     }
 
     public void pontuarP2(){
         pontuacao2 += 1;
         attPont();
+        som.Play();
     }
 
     public void attPont(){
