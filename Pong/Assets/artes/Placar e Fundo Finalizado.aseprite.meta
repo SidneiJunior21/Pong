@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6e632ace79fd7234a9b29bf298227eaa
+guid: f914dee70829bf44d8ee4baa8e9efeb7
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -98,7 +98,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638753462288318451
+  platformSettingsDirtyTick: 0
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -123,7 +123,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: "T\xE1bua-0001"
+  - name: Placar e Fundo Finalizado
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -133,9 +133,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 64
-      height: 64
-    spriteID: 9cb3a77215abae54dba170cef37ed598
+      width: 1920
+      height: 1080
+    spriteID: fe21fe69b92565f47b70f202b2faf4a3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -147,21 +147,21 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 2032771075
-    name: "T\xE1bua-0001"
+    guid: -2129856117
+    name: Placar e Fundo Finalizado
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: "T\xE1bua-0001"
+    - name: Placar e Fundo Finalizado
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
-        width: 64
-        height: 64
-      spriteId: 9cb3a77215abae54dba170cef37ed598
+        width: 1920
+        height: 1080
+      spriteId: fe21fe69b92565f47b70f202b2faf4a3
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -177,32 +177,8 @@ ScriptedImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
-  - name: DefaultTexturePlatform
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 16384
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 16384
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 64, y: 64}
-  previousTextureSize: {x: 128, y: 128}
+  canvasSize: {x: 1920, y: 1080}
+  previousTextureSize: {x: 2048, y: 2048}
