@@ -3,6 +3,7 @@ using UnityEngine;
 public class Jogadores : MonoBehaviour
 {
     public float velocidadeDoJogador = 5;
+    private float momentum;
     public bool Jogador1;
 
     public float BordaInferior = -5.3f;
@@ -27,10 +28,12 @@ public class Jogadores : MonoBehaviour
     {//W e S para mover, só move se estiver dentro da área do jogo
         if(Input.GetKey(KeyCode.W) && transform.position.y <= BordaSuperior)
         {
+            momentum = velocidadeDoJogador/4;
             transform.Translate(Vector2.up * velocidadeDoJogador * Time.deltaTime);
         }
         if(Input.GetKey(KeyCode.S) && transform.position.y >= BordaInferior)
         {
+            momentum = -velocidadeDoJogador/4;
             transform.Translate(Vector2.down * velocidadeDoJogador * Time.deltaTime);
         }
     }
@@ -38,11 +41,18 @@ public class Jogadores : MonoBehaviour
     {//setas para cima e baixo para mover, só move se estiver dentro da área do jogo
         if(Input.GetKey(KeyCode.UpArrow) && transform.position.y <= BordaSuperior)
         {
+            momentum = velocidadeDoJogador/4;
             transform.Translate(Vector2.up * velocidadeDoJogador * Time.deltaTime);
         }
         if(Input.GetKey(KeyCode.DownArrow) && transform.position.y >= BordaInferior)
         {
+            momentum = -velocidadeDoJogador/4;
             transform.Translate(Vector2.down * velocidadeDoJogador * Time.deltaTime);
         }
+    }
+
+    void OnCollisionEnter2D(Collision2D collisionInfo){
+        FindFirstObjectByType<Sushi>().corpo.linearVelocity *= new Vector2(1.1f, 1);
+        FindFirstObjectByType<Sushi>().corpo.linearVelocity += new Vector2(0, momentum);
     }
 }
