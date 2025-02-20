@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Bot\xE3o Inicio de Jogo Finalizado_0": -2237224295276612419
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

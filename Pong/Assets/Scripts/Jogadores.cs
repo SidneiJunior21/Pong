@@ -52,7 +52,8 @@ public class Jogadores : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D collisionInfo){
-        FindFirstObjectByType<Sushi>().corpo.linearVelocity *= new Vector2(1.1f, 1);
+        if(FindFirstObjectByType<Sushi>().corpo.linearVelocity.magnitude < 30 )
+            FindFirstObjectByType<Sushi>().corpo.linearVelocity *= new Vector2(1.1f, 0);
         FindFirstObjectByType<Sushi>().corpo.linearVelocity += new Vector2(0, momentum);
     }
 }
