@@ -42,9 +42,9 @@ public class SistemaPontuação : MonoBehaviour
         txtPont.text = pontuacao1 + " : " + pontuacao2;
     }
     public void attFinal(){
-        if (pontuacao1 == 5){
+        if (pontuacao1 == 10){
             SceneManager.LoadScene(cena1);  // Carregar cena1
-        } else if (pontuacao2 == 5){
+        } else if (pontuacao2 == 10){
             SceneManager.LoadScene(cena2);
         }
     }
