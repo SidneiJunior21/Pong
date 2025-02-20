@@ -6,11 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MenuPrincipal.unity
+    guid: ae47f826896e0664da1050173838bb4c
+  - enabled: 1
     path: Assets/Scenes/JogoPong.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/MenuPrincipal.unity
-    guid: ae47f826896e0664da1050173838bb4c
+    path: Assets/Scenes/vitoriaP1.unity
+    guid: a9280d0d5bd07f947893db980412b3fa
+  - enabled: 1
+    path: Assets/Scenes/vitoriaP2.unity
+    guid: 79d12949b2309b440bfad884f139fe77
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

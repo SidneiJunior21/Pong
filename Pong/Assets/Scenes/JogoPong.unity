@@ -1934,6 +1934,8 @@ MonoBehaviour:
   pontuacao2: 0
   txtPont: {fileID: 402108908}
   som: {fileID: 1218430441}
+  cena1: vitoriaP1
+  cena2: vitoriaP2
 --- !u!4 &1218430440
 Transform:
   m_ObjectHideFlags: 0

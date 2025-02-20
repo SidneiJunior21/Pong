@@ -7,7 +7,7 @@ public class Pause : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
@@ -19,11 +19,13 @@ public class Pause : MonoBehaviour
             {
                 pause.gameObject.SetActive(false);
                 Time.timeScale = 1;
+                Cursor.visible = false;
             }
             else
             {
                 pause.gameObject.SetActive(true);
                 Time.timeScale = 0;
+                Cursor.visible = true;
             };
         }
     }
@@ -35,6 +37,7 @@ public class Pause : MonoBehaviour
     {
         pause.gameObject.SetActive(false);
             Time.timeScale = 1; 
+            Cursor.visible = false;
     }
     public void Quit()
     {
