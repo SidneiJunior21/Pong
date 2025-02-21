@@ -40,5 +40,6 @@ public class Pause : MonoBehaviour
         pause.gameObject.SetActive(false);
             Time.timeScale = 1; 
             Cursor.visible = false;
+            pronto.gameObject.SetActive(true);
     }
 }
