@@ -5,8 +5,9 @@ public class MenuManager : MonoBehaviour
 {
     [SerializeField] private string Jogo;
     [SerializeField] private GameObject Menu;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
 
+    public AudioSource som;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
         public void LoadScenes(string cena)
     {
         SceneManager.LoadScene(cena);
@@ -22,5 +23,7 @@ public class MenuManager : MonoBehaviour
     void Start()
     {
         Cursor.visible = true;
+        som.loop = true;
+        som.Play();
     }
 }
