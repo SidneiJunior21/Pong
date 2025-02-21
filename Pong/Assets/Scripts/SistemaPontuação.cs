@@ -12,6 +12,8 @@ public class SistemaPontuação : MonoBehaviour
     public string cena1;
     public string cena2;
 
+    public bool SpawnPU = false;
+
     void Start(){//deixa o cursor invisivel e inicia as contagens com 0
         Cursor.visible = false;
         pontuacao1 = 0;
@@ -37,5 +39,11 @@ public class SistemaPontuação : MonoBehaviour
             SceneManager.LoadScene(cena1);  
         if (pontuacao2 == 10)
             SceneManager.LoadScene(cena2);
-        }
+        if ((pontuacao1 == 5 || pontuacao2 == 5) && !SpawnPU){
+            FindFirstObjectByType<Shoyu>().mover();
+            FindFirstObjectByType<Wasabi>().mover();
+            SpawnPU = true;
+        }           
+    }
+        
 }
