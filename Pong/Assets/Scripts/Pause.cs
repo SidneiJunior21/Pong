@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class Pause : MonoBehaviour
 {
     public Transform pause;
+    public GameObject pronto;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,12 +21,16 @@ public class Pause : MonoBehaviour
                 pause.gameObject.SetActive(false);
                 Time.timeScale = 1;
                 Cursor.visible = false;
+                pronto.gameObject.SetActive(true);
             }
             else
             {
                 pause.gameObject.SetActive(true);
                 Time.timeScale = 0;
                 Cursor.visible = true;
+                if(pronto.gameObject.activeSelf){
+                    pronto.gameObject.SetActive(false);
+                };
             };
         }
     }

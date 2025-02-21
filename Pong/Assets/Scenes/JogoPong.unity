@@ -1211,6 +1211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pause: {fileID: 651416393}
+  pronto: {fileID: 89925470}
 --- !u!1 &527098216
 GameObject:
   m_ObjectHideFlags: 0
