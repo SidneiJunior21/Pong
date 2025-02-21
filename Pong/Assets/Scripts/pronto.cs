@@ -5,9 +5,12 @@ using UnityEngine.UI;
 public class pronto : MonoBehaviour
 {
     public Transform Pronto;
+    public float tempo = 3;
+    public Text texto;
+    public GameObject obj;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
+    void Start(){
+        tempo = 3;
     }
 
     // Update is called once per frame
@@ -23,10 +26,6 @@ public class pronto : MonoBehaviour
         }
 
     }
-
-    public float tempo = 3;
-    public Text texto;
-    public GameObject obj;
     void DisplayTime(float timeToDisplay)
     {  
         timeToDisplay += 1;

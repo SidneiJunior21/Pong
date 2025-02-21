@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 949521ecd58219e428a0c6cd3d324356
+guid: 8f1815deb8fc0434092cf4a08734b985
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,9 +123,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Hashi esquerdo Finalizado
+  - name: Potinho de Wasabi
     originalName: 
-    pivot: {x: 5.3333335, y: -0.16363636}
+    pivot: {x: 0.5135135, y: -0.7777778}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -133,9 +133,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 6
-      height: 55
-    spriteID: c070f1128b75af24bb75cd5dc2827ea7
+      width: 37
+      height: 27
+    spriteID: 63eab4cede91866408f1a5572d68b03f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -147,21 +147,21 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1474834002
-    name: Hashi esquerdo Finalizado
+    guid: 522939669
+    name: Potinho de Wasabi
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Hashi esquerdo Finalizado
+    - name: Potinho de Wasabi
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 0
-        y: 9
-        width: 6
-        height: 55
-      spriteId: c070f1128b75af24bb75cd5dc2827ea7
+        x: 13
+        y: 21
+        width: 37
+        height: 27
+      spriteId: 63eab4cede91866408f1a5572d68b03f
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -181,4 +181,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 64, y: 64}
-  previousTextureSize: {x: 16, y: 64}
+  previousTextureSize: {x: 64, y: 64}

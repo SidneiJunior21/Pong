@@ -31,6 +31,7 @@ public class Pause : MonoBehaviour
     }
     public void LoadScenes(string cena)
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(cena);
     }
     public void resume()
