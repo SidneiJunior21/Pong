@@ -6,26 +6,21 @@ public class Jogadores : MonoBehaviour
     private float momentum;
     public bool Jogador1;
 
-    public float BordaInferior = -5.3f;
-    public float BordaSuperior = 2.25f;
+    public float BordaInferior = -6f;
+    public float BordaSuperior = 0.3f;
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Update()
     {
+        if(Jogador1 == true){//define qual método de movimentação será usado a depender de player é
+            moverJogador1();
+        }else{
+            moverJogador2();
+        }
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(Jogador1 == true)
-        {
-            moverJogador1();
-        }else{moverJogador2();}
-        
-    }
     private void moverJogador1()
-    {//W e S para mover, só move se estiver dentro da área do jogo
+    {//W e S para mover, só move se estiver dentro da área do jogo definida por borda superior e inferior
         if(Input.GetKey(KeyCode.W) && transform.position.y <= BordaSuperior)
         {
             momentum = velocidadeDoJogador/4;
@@ -37,8 +32,9 @@ public class Jogadores : MonoBehaviour
             transform.Translate(Vector2.down * velocidadeDoJogador * Time.deltaTime);
         }
     }
+
     private void moverJogador2()
-    {//setas para cima e baixo para mover, só move se estiver dentro da área do jogo
+    {//setas para cima e baixo para mover, só move se estiver dentro da área do jogo definida por borda superior e inferior
         if(Input.GetKey(KeyCode.UpArrow) && transform.position.y <= BordaSuperior)
         {
             momentum = velocidadeDoJogador/4;
@@ -51,9 +47,11 @@ public class Jogadores : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collisionInfo){
-        if(FindFirstObjectByType<Sushi>().corpo.linearVelocity.magnitude < 30 )
-            FindFirstObjectByType<Sushi>().corpo.linearVelocity *= new Vector2(1.1f, 1);
-        FindFirstObjectByType<Sushi>().corpo.linearVelocity += new Vector2(0, momentum);
+    void OnCollisionEnter2D(Collision2D collisionInfo){//ativa quando algo(sushi) colide no jogador
+        Vector2 VelSushi = FindFirstObjectByType<Sushi>().corpo.linearVelocity;
+
+        if(VelSushi.magnitude < 30 ) //se não tiver passado do limite de velocidade incrmenta
+            VelSushi *= new Vector2(1.1f, 1);
+        VelSushi += new Vector2(0, momentum); // adiciona uma parte do momentum do jogador na bola
     }
 }

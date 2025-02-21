@@ -1054,8 +1054,8 @@ Transform:
   m_GameObject: {fileID: 483107483}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.344514, y: -0.24081661, z: -9.990549}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalPosition: {x: -2.28, y: -0.24081661, z: -9.990549}
+  m_LocalScale: {x: 10, y: 12, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1333,8 +1333,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidadeDoJogador: 5
   Jogador1: 0
-  BordaInferior: -5.3
-  BordaSuperior: 0.05
+  BordaInferior: -6
+  BordaSuperior: 0.4
 --- !u!61 &647573506
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1497,19 +1497,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 949521ecd58219e428a0c6cd3d324356, type: 3}
       propertyPath: m_LocalScale.x
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 949521ecd58219e428a0c6cd3d324356, type: 3}
       propertyPath: m_LocalScale.y
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 949521ecd58219e428a0c6cd3d324356, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.5
+      value: -5.73
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 949521ecd58219e428a0c6cd3d324356, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.47
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 949521ecd58219e428a0c6cd3d324356, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2200,19 +2200,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 38fd4659601b54343985e697d6b2019e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 38fd4659601b54343985e697d6b2019e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 38fd4659601b54343985e697d6b2019e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10
+      value: 9.73
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 38fd4659601b54343985e697d6b2019e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.33
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 38fd4659601b54343985e697d6b2019e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2668,8 +2668,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidadeDoJogador: 5
   Jogador1: 1
-  BordaInferior: -5.5
-  BordaSuperior: -0.05
+  BordaInferior: -6
+  BordaSuperior: 0.3
 --- !u!61 &1562543397
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3318,8 +3318,8 @@ Transform:
   m_GameObject: {fileID: 2041544003}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3445141, y: -0.24081661, z: -9.990549}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalPosition: {x: 2.26, y: -0.24081661, z: -9.990549}
+  m_LocalScale: {x: 10, y: 12, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

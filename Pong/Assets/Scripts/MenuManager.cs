@@ -7,23 +7,20 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject Menu;
 
     public AudioSource som;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-        public void LoadScenes(string cena)
-    {
-        SceneManager.LoadScene(cena);
-    }
-    public void Jogar(){
-        SceneManager.LoadScene(Jogo);
-        Menu.SetActive(false);
-    }
 
-    public void Sair(){
-        Application.Quit();
-    }
-    void Start()
-    {
+    void Start(){//iniciar coloca musica em loop e amostra o cursor, estaria invisivel se tivesse reiniciado o jogo no menu de pause
         Cursor.visible = true;
         som.loop = true;
         som.Play();
     }
+
+    public void LoadScenes(string cena){//carrega uma cena passada como argumento
+        SceneManager.LoadScene(cena);
+    }
+
+    public void Sair(){//fecha o jogo
+        Application.Quit();
+    }
+
+    
 }

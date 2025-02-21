@@ -4,7 +4,7 @@ using UnityEngine;
 public class Sushi : MonoBehaviour
 {
     public float Velocidade;
-    public float randomizadorX;
+    public float randomizadorX = 0.5f;
 
     public Rigidbody2D corpo;
     public AudioSource som;
@@ -13,12 +13,6 @@ public class Sushi : MonoBehaviour
     {
         corpo = GetComponent<Rigidbody2D>();//agr ele associa os 2 sozinhos, n precisa setar na unity
         mover();//so move uma vez no começo, o movimento é preservado ao decorrer do jogo
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void mover(){
@@ -45,8 +39,15 @@ public class Sushi : MonoBehaviour
         corpo.linearVelocity = new Vector2(Xaleatorio, Yaleatorio);//se move na diagonal superior esquerda(x e y positivos), alterar no futuro
     }
 
-    void OnCollisionEnter2D(Collision2D collisionInfo){//incrementa velocidade aleatoriamente ao bater em algo
-        corpo.linearVelocity += new Vector2(randomizadorX, 0);
+    void OnCollisionEnter2D(Collision2D collisionInfo){//incrementa velocidadeX em um sentido aleatorio ao bater em algo, evita da bola ficar completamente vertical
+
+        float rand = Random.Range(0, 2);
+
+        if(rand == 0)
+            corpo.linearVelocity += new Vector2(randomizadorX, 0);
+        else
+            corpo.linearVelocity -= new Vector2(randomizadorX, 0);
+
         som.Play();
     }
 }

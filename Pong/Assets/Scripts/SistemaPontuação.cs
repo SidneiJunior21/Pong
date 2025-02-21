@@ -12,40 +12,30 @@ public class SistemaPontuação : MonoBehaviour
     public string cena1;
     public string cena2;
 
-    void Start(){
+    void Start(){//deixa o cursor invisivel e inicia as contagens com 0
         Cursor.visible = false;
         pontuacao1 = 0;
         pontuacao2 = 0;
         attPont();
-        attFinal();
-    }
-
-    void Update(){
-        
     }
   
-    public void pontuarP1(){
+    public void pontuarP1(){//aumenta pontuação do jogador 1, e toca som
         pontuacao1 += 1;
-        attPont();
         som.Play();
-        attFinal();
+        attPont();
     }
 
-    public void pontuarP2(){
+    public void pontuarP2(){//aumenta pontuação do jogador 2, e toca som
         pontuacao2 += 1;
-        attPont();
         som.Play();
-        attFinal();
+        attPont();
     }
 
-    public void attPont(){
+    public void attPont(){//atualiza o texto da pontuação e finaliza se alcançar 10
         txtPont.text = pontuacao1 + " : " + pontuacao2;
-    }
-    public void attFinal(){
-        if (pontuacao1 == 10){
-            SceneManager.LoadScene(cena1);  // Carregar cena1
-        } else if (pontuacao2 == 10){
+        if (pontuacao1 == 10)
+            SceneManager.LoadScene(cena1);  
+        if (pontuacao2 == 10)
             SceneManager.LoadScene(cena2);
         }
-    }
 }
