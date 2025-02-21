@@ -50,7 +50,7 @@ public class Jogadores : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collisionInfo){//ativa quando algo(sushi) colide no jogador
     Sushi sushi = FindFirstObjectByType<Sushi>();
 
-        if(sushi.corpo.linearVelocity.magnitude < 40 ) //se não tiver passado do limite de velocidade incrmenta
+        if(sushi.corpo.linearVelocity.magnitude < 30 ) //se não tiver passado do limite de velocidade incrmenta
             sushi.corpo.linearVelocity *= new Vector2(1.1f, 1);
         sushi.corpo.linearVelocity += new Vector2(0, momentum); // adiciona uma parte do momentum do jogador na bola
     }
