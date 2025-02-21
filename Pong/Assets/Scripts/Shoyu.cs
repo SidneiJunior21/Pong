@@ -2,9 +2,12 @@ using UnityEngine;
 
 public class Shoyu:MonoBehaviour{
 
+     public AudioSource som;
+
      void OnTriggerEnter2D(Collider2D other){
           //vai para outro canto do mapa 
           mover();
+          
           //acelera o sushi
           Sushi sushi = FindFirstObjectByType<Sushi>();
           sushi.corpo.linearVelocity = sushi.corpo.linearVelocity.normalized * 30;
@@ -14,6 +17,7 @@ public class Shoyu:MonoBehaviour{
           int randomX = Random.Range(-6, 7);
           int randomY = Random.Range(-6, 4);
 
+          som.Play();
           transform.position = new Vector2(randomX, randomY);
      }
 }
