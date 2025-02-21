@@ -7,7 +7,7 @@ public class Shoyu:MonoBehaviour{
      void OnTriggerEnter2D(Collider2D other){
           //vai para outro canto do mapa 
           mover();
-          
+          som.Play();
           //acelera o sushi
           Sushi sushi = FindFirstObjectByType<Sushi>();
           sushi.corpo.linearVelocity = sushi.corpo.linearVelocity.normalized * 30;
@@ -16,8 +16,7 @@ public class Shoyu:MonoBehaviour{
      public void mover(){//da uma posição aleatoria dentro da mesa
           int randomX = Random.Range(-6, 7);
           int randomY = Random.Range(-6, 4);
-
-          som.Play();
+          
           transform.position = new Vector2(randomX, randomY);
      }
 }
