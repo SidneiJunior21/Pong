@@ -10,7 +10,7 @@ public class Shoyu:MonoBehaviour{
           sushi.corpo.linearVelocity = sushi.corpo.linearVelocity.normalized * 30;
      }
 
-     public void mover(){
+     public void mover(){//da uma posição aleatoria dentro da mesa
           int randomX = Random.Range(-6, 7);
           int randomY = Random.Range(-6, 4);
 
