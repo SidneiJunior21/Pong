@@ -10,7 +10,7 @@ public class Shoyu:MonoBehaviour{
           som.Play();
           //acelera o sushi
           Sushi sushi = FindFirstObjectByType<Sushi>();
-          sushi.corpo.linearVelocity = sushi.corpo.linearVelocity.normalized * 30;
+          sushi.corpo.linearVelocity = sushi.corpo.linearVelocity.normalized * 13;
      }
 
      public void mover(){//da uma posição aleatoria dentro da mesa
